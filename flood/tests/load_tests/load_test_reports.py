@@ -297,7 +297,7 @@ _test_template_cells: notebook_io.NotebookTemplate = [
             # show test metadata
 
             toolstr.print_text_box(test_name + ' parameters')
-            flood.print_load_test_summary(results_payload['test'])
+            # flood.print_load_test_summary(results_payload['test'])
             toolstr.print('- nodes tested:')
             nodes_df = pl.from_records(list(results_payload['nodes'].values()))
             toolstr.print_dataframe_as_table(nodes_df)
